@@ -31,39 +31,39 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControlInput = new System.Windows.Forms.TabControl();
             this.tabPageInput = new System.Windows.Forms.TabPage();
+            this.grpOut = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanelOut = new System.Windows.Forms.TableLayoutPanel();
+            this.lblSonstiges = new System.Windows.Forms.Label();
+            this.txtHaushalt = new System.Windows.Forms.TextBox();
+            this.txtBuecher = new System.Windows.Forms.TextBox();
+            this.lblBuecher = new System.Windows.Forms.Label();
+            this.lblLuxus = new System.Windows.Forms.Label();
+            this.txtHardware = new System.Windows.Forms.TextBox();
+            this.txtMonatlich = new System.Windows.Forms.TextBox();
+            this.txtGames = new System.Windows.Forms.TextBox();
+            this.lblEssen = new System.Windows.Forms.Label();
+            this.lblHardware = new System.Windows.Forms.Label();
+            this.lblGames = new System.Windows.Forms.Label();
+            this.lblMonatlich = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLuxus = new System.Windows.Forms.TextBox();
+            this.lblHaushalt = new System.Windows.Forms.Label();
+            this.txtSonstiges = new System.Windows.Forms.TextBox();
+            this.btnSubmitOut = new System.Windows.Forms.Button();
+            this.grpIn = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanelIn = new System.Windows.Forms.TableLayoutPanel();
+            this.lblInput = new System.Windows.Forms.Label();
+            this.btnSubmitIn = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.grpIn = new System.Windows.Forms.GroupBox();
-            this.grpOut = new System.Windows.Forms.GroupBox();
-            this.lblEssen = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblGames = new System.Windows.Forms.Label();
-            this.lblMonatlich = new System.Windows.Forms.Label();
-            this.lblHardware = new System.Windows.Forms.Label();
-            this.txtGames = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanelOut = new System.Windows.Forms.TableLayoutPanel();
-            this.txtMonatlich = new System.Windows.Forms.TextBox();
-            this.txtHardware = new System.Windows.Forms.TextBox();
-            this.txtLuxus = new System.Windows.Forms.TextBox();
-            this.lblLuxus = new System.Windows.Forms.Label();
-            this.lblBuecher = new System.Windows.Forms.Label();
-            this.lblHaushalt = new System.Windows.Forms.Label();
-            this.txtBuecher = new System.Windows.Forms.TextBox();
-            this.txtHaushalt = new System.Windows.Forms.TextBox();
-            this.lblSonstiges = new System.Windows.Forms.Label();
-            this.txtSonstiges = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanelIn = new System.Windows.Forms.TableLayoutPanel();
-            this.lblInput = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.btnSubmitOut = new System.Windows.Forms.Button();
-            this.btnSubmitIn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControlInput.SuspendLayout();
             this.tabPageInput.SuspendLayout();
-            this.grpIn.SuspendLayout();
             this.grpOut.SuspendLayout();
             this.tableLayoutPanelOut.SuspendLayout();
+            this.grpIn.SuspendLayout();
             this.tableLayoutPanelIn.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,48 +105,6 @@
             this.tabPageInput.Text = "Dateneingabe";
             this.tabPageInput.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(997, 572);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(997, 572);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(997, 572);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // grpIn
-            // 
-            this.grpIn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.grpIn.Controls.Add(this.tableLayoutPanelIn);
-            this.grpIn.Location = new System.Drawing.Point(7, 7);
-            this.grpIn.Name = "grpIn";
-            this.grpIn.Size = new System.Drawing.Size(463, 559);
-            this.grpIn.TabIndex = 1;
-            this.grpIn.TabStop = false;
-            this.grpIn.Text = "Einnahmen";
-            // 
             // grpOut
             // 
             this.grpOut.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -159,56 +117,6 @@
             this.grpOut.TabIndex = 2;
             this.grpOut.TabStop = false;
             this.grpOut.Text = "Ausgaben";
-            // 
-            // lblEssen
-            // 
-            this.lblEssen.AutoSize = true;
-            this.lblEssen.Location = new System.Drawing.Point(3, 0);
-            this.lblEssen.Name = "lblEssen";
-            this.lblEssen.Size = new System.Drawing.Size(36, 13);
-            this.lblEssen.TabIndex = 0;
-            this.lblEssen.Text = "Essen";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(133, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // lblGames
-            // 
-            this.lblGames.AutoSize = true;
-            this.lblGames.Location = new System.Drawing.Point(3, 38);
-            this.lblGames.Name = "lblGames";
-            this.lblGames.Size = new System.Drawing.Size(40, 13);
-            this.lblGames.TabIndex = 2;
-            this.lblGames.Text = "Games";
-            // 
-            // lblMonatlich
-            // 
-            this.lblMonatlich.AutoSize = true;
-            this.lblMonatlich.Location = new System.Drawing.Point(3, 72);
-            this.lblMonatlich.Name = "lblMonatlich";
-            this.lblMonatlich.Size = new System.Drawing.Size(78, 13);
-            this.lblMonatlich.TabIndex = 3;
-            this.lblMonatlich.Text = "Monatl. Kosten";
-            // 
-            // lblHardware
-            // 
-            this.lblHardware.AutoSize = true;
-            this.lblHardware.Location = new System.Drawing.Point(3, 114);
-            this.lblHardware.Name = "lblHardware";
-            this.lblHardware.Size = new System.Drawing.Size(104, 13);
-            this.lblHardware.TabIndex = 4;
-            this.lblHardware.Text = "Hardware / Gadgets";
-            // 
-            // txtGames
-            // 
-            this.txtGames.Location = new System.Drawing.Point(133, 41);
-            this.txtGames.Name = "txtGames";
-            this.txtGames.Size = new System.Drawing.Size(100, 20);
-            this.txtGames.TabIndex = 5;
             // 
             // tableLayoutPanelOut
             // 
@@ -248,35 +156,28 @@
             this.tableLayoutPanelOut.Size = new System.Drawing.Size(407, 460);
             this.tableLayoutPanelOut.TabIndex = 0;
             // 
-            // txtMonatlich
+            // lblSonstiges
             // 
-            this.txtMonatlich.Location = new System.Drawing.Point(133, 75);
-            this.txtMonatlich.Name = "txtMonatlich";
-            this.txtMonatlich.Size = new System.Drawing.Size(100, 20);
-            this.txtMonatlich.TabIndex = 6;
+            this.lblSonstiges.AutoSize = true;
+            this.lblSonstiges.Location = new System.Drawing.Point(3, 272);
+            this.lblSonstiges.Name = "lblSonstiges";
+            this.lblSonstiges.Size = new System.Drawing.Size(53, 13);
+            this.lblSonstiges.TabIndex = 14;
+            this.lblSonstiges.Text = "Sonstiges";
             // 
-            // txtHardware
+            // txtHaushalt
             // 
-            this.txtHardware.Location = new System.Drawing.Point(133, 117);
-            this.txtHardware.Name = "txtHardware";
-            this.txtHardware.Size = new System.Drawing.Size(100, 20);
-            this.txtHardware.TabIndex = 7;
+            this.txtHaushalt.Location = new System.Drawing.Point(133, 241);
+            this.txtHaushalt.Name = "txtHaushalt";
+            this.txtHaushalt.Size = new System.Drawing.Size(100, 20);
+            this.txtHaushalt.TabIndex = 13;
             // 
-            // txtLuxus
+            // txtBuecher
             // 
-            this.txtLuxus.Location = new System.Drawing.Point(133, 156);
-            this.txtLuxus.Name = "txtLuxus";
-            this.txtLuxus.Size = new System.Drawing.Size(100, 20);
-            this.txtLuxus.TabIndex = 8;
-            // 
-            // lblLuxus
-            // 
-            this.lblLuxus.AutoSize = true;
-            this.lblLuxus.Location = new System.Drawing.Point(3, 153);
-            this.lblLuxus.Name = "lblLuxus";
-            this.lblLuxus.Size = new System.Drawing.Size(35, 13);
-            this.lblLuxus.TabIndex = 9;
-            this.lblLuxus.Text = "Luxus";
+            this.txtBuecher.Location = new System.Drawing.Point(133, 200);
+            this.txtBuecher.Name = "txtBuecher";
+            this.txtBuecher.Size = new System.Drawing.Size(100, 20);
+            this.txtBuecher.TabIndex = 12;
             // 
             // lblBuecher
             // 
@@ -287,6 +188,86 @@
             this.lblBuecher.TabIndex = 10;
             this.lblBuecher.Text = "Bücher";
             // 
+            // lblLuxus
+            // 
+            this.lblLuxus.AutoSize = true;
+            this.lblLuxus.Location = new System.Drawing.Point(3, 153);
+            this.lblLuxus.Name = "lblLuxus";
+            this.lblLuxus.Size = new System.Drawing.Size(35, 13);
+            this.lblLuxus.TabIndex = 9;
+            this.lblLuxus.Text = "Luxus";
+            // 
+            // txtHardware
+            // 
+            this.txtHardware.Location = new System.Drawing.Point(133, 117);
+            this.txtHardware.Name = "txtHardware";
+            this.txtHardware.Size = new System.Drawing.Size(100, 20);
+            this.txtHardware.TabIndex = 7;
+            // 
+            // txtMonatlich
+            // 
+            this.txtMonatlich.Location = new System.Drawing.Point(133, 75);
+            this.txtMonatlich.Name = "txtMonatlich";
+            this.txtMonatlich.Size = new System.Drawing.Size(100, 20);
+            this.txtMonatlich.TabIndex = 6;
+            // 
+            // txtGames
+            // 
+            this.txtGames.Location = new System.Drawing.Point(133, 41);
+            this.txtGames.Name = "txtGames";
+            this.txtGames.Size = new System.Drawing.Size(100, 20);
+            this.txtGames.TabIndex = 5;
+            // 
+            // lblEssen
+            // 
+            this.lblEssen.AutoSize = true;
+            this.lblEssen.Location = new System.Drawing.Point(3, 0);
+            this.lblEssen.Name = "lblEssen";
+            this.lblEssen.Size = new System.Drawing.Size(36, 13);
+            this.lblEssen.TabIndex = 0;
+            this.lblEssen.Text = "Essen";
+            // 
+            // lblHardware
+            // 
+            this.lblHardware.AutoSize = true;
+            this.lblHardware.Location = new System.Drawing.Point(3, 114);
+            this.lblHardware.Name = "lblHardware";
+            this.lblHardware.Size = new System.Drawing.Size(104, 13);
+            this.lblHardware.TabIndex = 4;
+            this.lblHardware.Text = "Hardware / Gadgets";
+            // 
+            // lblGames
+            // 
+            this.lblGames.AutoSize = true;
+            this.lblGames.Location = new System.Drawing.Point(3, 38);
+            this.lblGames.Name = "lblGames";
+            this.lblGames.Size = new System.Drawing.Size(40, 13);
+            this.lblGames.TabIndex = 2;
+            this.lblGames.Text = "Games";
+            // 
+            // lblMonatlich
+            // 
+            this.lblMonatlich.AutoSize = true;
+            this.lblMonatlich.Location = new System.Drawing.Point(3, 72);
+            this.lblMonatlich.Name = "lblMonatlich";
+            this.lblMonatlich.Size = new System.Drawing.Size(78, 13);
+            this.lblMonatlich.TabIndex = 3;
+            this.lblMonatlich.Text = "Monatl. Kosten";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(133, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // txtLuxus
+            // 
+            this.txtLuxus.Location = new System.Drawing.Point(133, 156);
+            this.txtLuxus.Name = "txtLuxus";
+            this.txtLuxus.Size = new System.Drawing.Size(100, 20);
+            this.txtLuxus.TabIndex = 8;
+            // 
             // lblHaushalt
             // 
             this.lblHaushalt.AutoSize = true;
@@ -296,35 +277,34 @@
             this.lblHaushalt.TabIndex = 11;
             this.lblHaushalt.Text = "Haushalt";
             // 
-            // txtBuecher
-            // 
-            this.txtBuecher.Location = new System.Drawing.Point(133, 200);
-            this.txtBuecher.Name = "txtBuecher";
-            this.txtBuecher.Size = new System.Drawing.Size(100, 20);
-            this.txtBuecher.TabIndex = 12;
-            // 
-            // txtHaushalt
-            // 
-            this.txtHaushalt.Location = new System.Drawing.Point(133, 241);
-            this.txtHaushalt.Name = "txtHaushalt";
-            this.txtHaushalt.Size = new System.Drawing.Size(100, 20);
-            this.txtHaushalt.TabIndex = 13;
-            // 
-            // lblSonstiges
-            // 
-            this.lblSonstiges.AutoSize = true;
-            this.lblSonstiges.Location = new System.Drawing.Point(3, 272);
-            this.lblSonstiges.Name = "lblSonstiges";
-            this.lblSonstiges.Size = new System.Drawing.Size(53, 13);
-            this.lblSonstiges.TabIndex = 14;
-            this.lblSonstiges.Text = "Sonstiges";
-            // 
             // txtSonstiges
             // 
             this.txtSonstiges.Location = new System.Drawing.Point(133, 275);
             this.txtSonstiges.Name = "txtSonstiges";
             this.txtSonstiges.Size = new System.Drawing.Size(100, 20);
             this.txtSonstiges.TabIndex = 13;
+            // 
+            // btnSubmitOut
+            // 
+            this.btnSubmitOut.Location = new System.Drawing.Point(3, 408);
+            this.btnSubmitOut.Name = "btnSubmitOut";
+            this.btnSubmitOut.Size = new System.Drawing.Size(117, 23);
+            this.btnSubmitOut.TabIndex = 15;
+            this.btnSubmitOut.Text = "Daten übernehmen";
+            this.btnSubmitOut.UseVisualStyleBackColor = true;
+            this.btnSubmitOut.Click += new System.EventHandler(this.btnSubmitOut_Click);
+            // 
+            // grpIn
+            // 
+            this.grpIn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.grpIn.Controls.Add(this.tableLayoutPanelIn);
+            this.grpIn.Location = new System.Drawing.Point(7, 7);
+            this.grpIn.Name = "grpIn";
+            this.grpIn.Size = new System.Drawing.Size(463, 559);
+            this.grpIn.TabIndex = 1;
+            this.grpIn.TabStop = false;
+            this.grpIn.Text = "Einnahmen";
             // 
             // tableLayoutPanelIn
             // 
@@ -352,23 +332,6 @@
             this.lblInput.TabIndex = 0;
             this.lblInput.Text = "Einnahmen";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(133, 3);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 1;
-            // 
-            // btnSubmitOut
-            // 
-            this.btnSubmitOut.Location = new System.Drawing.Point(3, 408);
-            this.btnSubmitOut.Name = "btnSubmitOut";
-            this.btnSubmitOut.Size = new System.Drawing.Size(117, 23);
-            this.btnSubmitOut.TabIndex = 15;
-            this.btnSubmitOut.Text = "Daten übernehmen";
-            this.btnSubmitOut.UseVisualStyleBackColor = true;
-            this.btnSubmitOut.Click += new System.EventHandler(this.btnSubmitOut_Click);
-            // 
             // btnSubmitIn
             // 
             this.btnSubmitIn.Location = new System.Drawing.Point(3, 395);
@@ -378,6 +341,43 @@
             this.btnSubmitIn.Text = "Daten übernehmen";
             this.btnSubmitIn.UseVisualStyleBackColor = true;
             this.btnSubmitIn.Click += new System.EventHandler(this.btnSubmitIn_Click);
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(133, 3);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 1;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(997, 572);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(997, 572);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(997, 572);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -390,10 +390,10 @@
             this.panel1.ResumeLayout(false);
             this.tabControlInput.ResumeLayout(false);
             this.tabPageInput.ResumeLayout(false);
-            this.grpIn.ResumeLayout(false);
             this.grpOut.ResumeLayout(false);
             this.tableLayoutPanelOut.ResumeLayout(false);
             this.tableLayoutPanelOut.PerformLayout();
+            this.grpIn.ResumeLayout(false);
             this.tableLayoutPanelIn.ResumeLayout(false);
             this.tableLayoutPanelIn.PerformLayout();
             this.ResumeLayout(false);

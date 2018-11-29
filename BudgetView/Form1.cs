@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.Collections;
+using Newtonsoft.Json.Linq;
+using System.IO;
 
 namespace BudgetView
 {
@@ -39,34 +41,16 @@ namespace BudgetView
 
 
         //method to gather, validate and convert text fields to JSON
-        public string serializeInputToJSON(TableLayoutPanel currentTableLayoutPanel)
+        public string serializeInputToJSON(TableLayoutPanel currentTableLayoutPanel, Boolean isExpense)
         {
             try
             {
                 //New array to save values
-                string[,] inputValues = new string[currentTableLayoutPanel.RowCount, 2];
-
-
+                string[] inputValues = new string[currentTableLayoutPanel.RowCount];
 
                 //Read all rows
                 for (int i = 0; i < currentTableLayoutPanel.RowCount; i++)
                 {
-                    //TODO: Fill array with lbl text (descr.)
-                    //Read lbl text 
-                    //Assign control from table layout panel to new control. Should be LABEL type
-                    Control currentControlLabel = currentTableLayoutPanel.GetControlFromPosition(0, i);
-                    //Check if type is Label & text is not empty
-                    if (currentControlLabel is Label && currentControlLabel.Text != "")
-                    {
-                        //write to array
-                        inputValues[i, 0] = currentControlLabel.Name;
-                        MessageBox.Show("LABEL YES!)");
-                    }
-                    else
-                    {
-                        MessageBox.Show("NYET LABEL CYKA!)");
-                    }
-
                     //Read, validate & write INPUT FROM TEXTBOX 
                     //Assign control from table layout panel to new control. Should be TextBox type
                     Control currentControlTextBox = currentTableLayoutPanel.GetControlFromPosition(1, i);
@@ -77,22 +61,31 @@ namespace BudgetView
                         if (isDouble(currentControlTextBox.Text))
                         {
                             //write to array
-                            inputValues[i, 1] = currentControlTextBox.Text;
+                            inputValues[i] = currentControlTextBox.Text;
                         }
 
-                        MessageBox.Show("TEXT & INT yes!)");
                     }
-                    else
-                    {
-                        MessageBox.Show("NYET TEXT & INT CYKA!)");
-                    }
+
                 }
-                string inputAsJSON = "";
-                return inputAsJSON = JsonConvert.SerializeObject(inputValues);
+
+                if (isExpense)
+                {
+
+                   Expense dataTransferObject = new Expense(inputValues);
+                    return JsonConvert.SerializeObject(dataTransferObject);
+                }
+                else
+                {
+                    //TODO: create class and object
+                    Expense dataTransferObject = new Expense(inputValues);
+                    return JsonConvert.SerializeObject(dataTransferObject);
+                }
             }
+
             catch (Exception ex)
             {
-                return "";
+                MessageBox.Show("KRITISCHER FEHLER BEI JSON KONVERTIERUNG: " + ex.Message);
+                return null;
             }
         }
 
@@ -101,10 +94,12 @@ namespace BudgetView
             try
             {
                 //Gather data, val. and converto json
-                string inputAsJSON = serializeInputToJSON(tableLayoutPanelIn);
+                var inputAsJSON = serializeInputToJSON(tableLayoutPanelIn, false);
 
                 //write json to file
-                System.IO.File.WriteAllText(@"D:\income.json", inputAsJSON);
+               
+
+              //  System.IO.File.AppendAllText(@"D:\income.json", inputAsJSON);
             }
             catch (Exception ex)
             {
@@ -115,14 +110,24 @@ namespace BudgetView
         {
             try
             {
-                //Gather data, val. and converto json
-                string inputAsJSON = serializeInputToJSON(tableLayoutPanelOut);
+                //Gather input data, val. and converto json
+                var jsonStringFromInput = serializeInputToJSON(tableLayoutPanelOut, true);
+          
+
 
                 //write json to file
-                System.IO.File.WriteAllText(@"D:\expense.json", inputAsJSON);
+                System.IO.File.AppendAllText(@"D:\expense.json", jsonStringFromInput);
+
+                //ignore for now
+                /* using (StreamWriter file = File.CreateText(@"D:\expense.json"))
+                 {
+                     JsonSerializer serializer = new JsonSerializer();
+                     serializer.Serialize(file, inputAsJSON);
+                 }*/
             }
             catch (Exception ex)
             {
+                MessageBox.Show("KRITISCHER FEHLER BEI JSON KONVERTIERUNG: " + ex.Message);
             }
         }
     }
